@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Live Guru" duration-ms="122841" started-at="2021-03-30T07:39:12Z" finished-at="2021-03-30T07:41:15Z">
+    <groups>
+    </groups>
+    <test name="Run on Firefox" duration-ms="72103" started-at="2021-03-30T07:39:12Z" finished-at="2021-03-30T07:40:24Z">
+      <class name="com.liveguru.login.Level_04_Register_Login_Multiple_Browser">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@5dfcfece]" name="beforeClass" is-config="true" duration-ms="13262" started-at="2021-03-30T07:39:12Z" finished-at="2021-03-30T07:39:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Login_01_Empty_Email_And_Password()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@5dfcfece]" name="Login_01_Empty_Email_And_Password" duration-ms="8902" started-at="2021-03-30T07:39:25Z" finished-at="2021-03-30T07:39:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_01_Empty_Email_And_Password -->
+        <test-method status="PASS" signature="Login_02_Invalid_Email()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@5dfcfece]" name="Login_02_Invalid_Email" duration-ms="6178" started-at="2021-03-30T07:39:34Z" finished-at="2021-03-30T07:39:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_02_Invalid_Email -->
+        <test-method status="PASS" signature="Login_03_Invalid_Password()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@5dfcfece]" name="Login_03_Invalid_Password" duration-ms="5389" started-at="2021-03-30T07:39:40Z" description="Password less than 6 chars" finished-at="2021-03-30T07:39:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_03_Invalid_Password -->
+        <test-method status="PASS" signature="Login_04_Incorrect_Email()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@5dfcfece]" name="Login_04_Incorrect_Email" duration-ms="12543" started-at="2021-03-30T07:39:46Z" description="Email does not exist in the system" finished-at="2021-03-30T07:39:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_04_Incorrect_Email -->
+        <test-method status="PASS" signature="Login_05_Incorrect_Password()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@5dfcfece]" name="Login_05_Incorrect_Password" duration-ms="14977" started-at="2021-03-30T07:39:58Z" finished-at="2021-03-30T07:40:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_05_Incorrect_Password -->
+        <test-method status="PASS" signature="Login_06_Valid_Email_And_Password()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@5dfcfece]" name="Login_06_Valid_Email_And_Password" duration-ms="9236" started-at="2021-03-30T07:40:13Z" finished-at="2021-03-30T07:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_06_Valid_Email_And_Password -->
+        <test-method status="PASS" signature="cleanBrowser()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@5dfcfece]" name="cleanBrowser" is-config="true" duration-ms="1528" started-at="2021-03-30T07:40:23Z" finished-at="2021-03-30T07:40:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanBrowser -->
+      </class> <!-- com.liveguru.login.Level_04_Register_Login_Multiple_Browser -->
+    </test> <!-- Run on Firefox -->
+    <test name="Run on Chrome" duration-ms="50693" started-at="2021-03-30T07:40:24Z" finished-at="2021-03-30T07:41:15Z">
+      <class name="com.liveguru.login.Level_04_Register_Login_Multiple_Browser">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@39aeed2f]" name="beforeClass" is-config="true" duration-ms="8495" started-at="2021-03-30T07:40:24Z" finished-at="2021-03-30T07:40:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Login_01_Empty_Email_And_Password()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@39aeed2f]" name="Login_01_Empty_Email_And_Password" duration-ms="17407" started-at="2021-03-30T07:40:33Z" finished-at="2021-03-30T07:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_01_Empty_Email_And_Password -->
+        <test-method status="PASS" signature="Login_02_Invalid_Email()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@39aeed2f]" name="Login_02_Invalid_Email" duration-ms="3395" started-at="2021-03-30T07:40:50Z" finished-at="2021-03-30T07:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_02_Invalid_Email -->
+        <test-method status="PASS" signature="Login_03_Invalid_Password()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@39aeed2f]" name="Login_03_Invalid_Password" duration-ms="3388" started-at="2021-03-30T07:40:54Z" description="Password less than 6 chars" finished-at="2021-03-30T07:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_03_Invalid_Password -->
+        <test-method status="PASS" signature="Login_04_Incorrect_Email()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@39aeed2f]" name="Login_04_Incorrect_Email" duration-ms="3243" started-at="2021-03-30T07:40:57Z" description="Email does not exist in the system" finished-at="2021-03-30T07:41:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_04_Incorrect_Email -->
+        <test-method status="PASS" signature="Login_05_Incorrect_Password()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@39aeed2f]" name="Login_05_Incorrect_Password" duration-ms="4134" started-at="2021-03-30T07:41:00Z" finished-at="2021-03-30T07:41:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_05_Incorrect_Password -->
+        <test-method status="PASS" signature="Login_06_Valid_Email_And_Password()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@39aeed2f]" name="Login_06_Valid_Email_And_Password" duration-ms="9961" started-at="2021-03-30T07:41:04Z" finished-at="2021-03-30T07:41:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_06_Valid_Email_And_Password -->
+        <test-method status="PASS" signature="cleanBrowser()[pri:0, instance:com.liveguru.login.Level_04_Register_Login_Multiple_Browser@39aeed2f]" name="cleanBrowser" is-config="true" duration-ms="652" started-at="2021-03-30T07:41:14Z" finished-at="2021-03-30T07:41:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanBrowser -->
+      </class> <!-- com.liveguru.login.Level_04_Register_Login_Multiple_Browser -->
+    </test> <!-- Run on Chrome -->
+  </suite> <!-- Live Guru -->
+</testng-results>

@@ -1,4 +1,4 @@
-package not.nopcommerce.login;
+package com.nopcommerce.login;
 
 import java.util.concurrent.TimeUnit;
 
@@ -22,13 +22,13 @@ public class Level_03_Register_Login_Page_Object {
 		System.setProperty("webdriver.gecko.driver", projectLocation + "\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); 
-		//Step 1: Open URL => Home Page
-		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
 	}
 
 	@Test
 	public void Login_01_Register_To_System() {
+		//Step 1: Open URL => Home Page
+		driver.get("https://demo.nopcommerce.com/");
+		homePage = new HomePageObject(driver);
 		//Step 2 Click to Register Link => Register Page
 		homePage.clickToRegisterLink();
 		registerPage = new RegisterPageObject(driver); 
