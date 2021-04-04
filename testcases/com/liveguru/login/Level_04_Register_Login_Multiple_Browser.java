@@ -1,7 +1,5 @@
 package com.liveguru.login;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -18,19 +16,19 @@ public class Level_04_Register_Login_Multiple_Browser extends BaseTest {
 	String projectLocation = System.getProperty("user.dir");
 	WebDriver driver;
 
-	@Parameters("browser")
+	@Parameters({"browser", "url"})
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	public void beforeClass(String browserName, String appUrl) {
 
-		driver = initBrowser(browserName); 
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver = initBrowser(browserName, appUrl); 
+		homePage = new HomePageObject(driver);
 
 	}
 
 	@Test
 	public void Login_01_Empty_Email_And_Password() {
 		// Step 1: Open URL => Home Page
-		driver.get("http://live.demoguru99.com/index.php/");
+		//driver.get("http://live.demoguru99.com/index.php/");
 		homePage = new HomePageObject(driver);
 
 		homePage.clickToMyAccountFooterLink();

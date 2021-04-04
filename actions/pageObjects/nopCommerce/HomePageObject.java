@@ -13,14 +13,18 @@ public class HomePageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public void clickToRegisterLink() {
+	public RegisterPageObject clickToRegisterLink() {
+		System.out.println("Yen test register");
 		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
+		
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
+		return PageObjectManager.getRegisterPage(driver);
 	}
 
-	public void clickToLoginLink() {
+	public LoginPageObject clickToLoginLink() {
 		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
 		clickToElement(driver, HomePageUI.LOGIN_LINK);
+		return PageObjectManager.getLoginPage(driver);
 	}
 
 	public boolean isHomePageDisplayed() {
