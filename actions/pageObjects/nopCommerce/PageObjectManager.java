@@ -22,12 +22,10 @@ public class PageObjectManager {
 	}
 
 	public static RegisterPageObject getRegisterPage(WebDriver driver) {
-		/*if (registerPage == null) {
+		if (registerPage == null) {
 			registerPage = new RegisterPageObject(driver);
 		}
 		return registerPage;
 		
-		*/
-		return new RegisterPageObject(driver);
 	}
 }
