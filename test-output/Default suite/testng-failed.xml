@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object">
+      <class name="com.nopcommerce.register.Register">
         <methods>
-          <include name="Login_02_Login_To_System"/>
-          <include name="Login_01_Register_To_System"/>
+          <include name="TC_03_Register_With_Existing_Email"/>
+          <include name="TC_02_Register_With_Wrong_Email"/>
           <include name="beforeClass"/>
           <include name="cleanBrowser"/>
         </methods>
-      </class> <!-- com.nopcommerce.login.Level_03_Register_Login_Page_Object -->
+      </class> <!-- com.nopcommerce.register.Register -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

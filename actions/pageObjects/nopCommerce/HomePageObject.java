@@ -14,13 +14,17 @@ public class HomePageObject extends BasePage {
 	}
 
 	public RegisterPageObject clickToRegisterLink() {
-		System.out.println("Yen test register");
 		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
-		
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
 		return PageObjectManager.getRegisterPage(driver);
 	}
-
+	
+	/*public void clickToRegisterLink() {
+		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
+		clickToElement(driver, HomePageUI.REGISTER_LINK);
+		
+	}
+*/
 	public LoginPageObject clickToLoginLink() {
 		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
 		clickToElement(driver, HomePageUI.LOGIN_LINK);

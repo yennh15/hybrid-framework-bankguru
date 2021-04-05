@@ -30,8 +30,8 @@ public class BaseTest {
 	public WebDriver initBrowser(String browserName, String appUrl) {
 		BROWSER browser = BROWSER.valueOf(browserName.toUpperCase());
 		if (browser==BROWSER.CHROME) {
-			//WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver", projectLocation+ getSlash("browserDrivers") + "chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", projectLocation+ getSlash("browserDrivers") + "chromedriver.exe");
 			 driver = new ChromeDriver();
 		} else if (browser==BROWSER.FIREFOX) {
 			System.setProperty("webdriver.gecko.driver", projectLocation+ getSlash("browserDrivers") + "geckodriver.exe");

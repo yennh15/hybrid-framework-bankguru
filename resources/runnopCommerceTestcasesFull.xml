@@ -6,17 +6,16 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class
-				name="com.nopcommerce.login.Level_03_Register_Login_Page_Object" />
+				name="com.nopcommerce.register.Register" />
 		</classes>
 	</test> 
- 
-	<test name="Run on Firefox">
+<!-- 
+	<test name="Run on FireFox">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class
-				name="com.nopcommerce.login.Level_03_Register_Login_Page_Object" />
+				name="com.nopcommerce.register.Register" />
 		</classes>
 	</test>
- 
-
+ -->	
 </suite> 

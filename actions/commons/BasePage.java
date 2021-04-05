@@ -15,6 +15,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.nopCommerce.OrderPageObject;
+import pageObjects.nopCommerce.PageObjectManager;
+import pageObjects.nopCommerce.SearchPageObject;
+import pageUIs.nopCommerce.PageUIs;
+
 public class BasePage {
 
 	public void openPageUrl(WebDriver driver, String pageUrl) {
@@ -370,10 +375,22 @@ public class BasePage {
 		wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
+	
+	public SearchPageObject openSearchPage(WebDriver driver) {
+		waitForElementClickable(driver, PageUIs.SEARCH_LINK_AT_FOOTER);
+		clickToElement(driver, PageUIs.SEARCH_LINK_AT_FOOTER);
+		return PageObjectManager.getSearchPage(driver);
+	}
+	
+	public OrderPageObject openOrderPage(WebDriver driver) {
+		waitForElementClickable(driver, PageUIs.ORDERS_LINK_AT_FOOTER);
+		clickToElement(driver, PageUIs.ORDERS_LINK_AT_FOOTER);
+		return PageObjectManager.getOrderPage(driver);
+	}
 
 	private Alert alert;
 	private WebDriverWait wait;
-	private long timeout = 30000;
+	private long timeout = 2000;
 	private Select select;
 	private JavascriptExecutor jsExecutor;
 	private Actions action;

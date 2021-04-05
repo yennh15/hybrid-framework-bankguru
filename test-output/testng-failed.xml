@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Nop Commerce]">
-  <parameter name="url" value="https://demo.nopcommerce.com/"/>
-  <test thread-count="5" name="Run on Firefox(failed)">
-    <parameter name="browser" value="firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object">
+      <class name="com.nopcommerce.register.Register">
         <methods>
-          <include name="Login_02_Login_To_System"/>
-          <include name="Login_01_Register_To_System"/>
+          <include name="TC_03_Register_With_Existing_Email"/>
+          <include name="TC_02_Register_With_Wrong_Email"/>
           <include name="beforeClass"/>
           <include name="cleanBrowser"/>
         </methods>
-      </class> <!-- com.nopcommerce.login.Level_03_Register_Login_Page_Object -->
+      </class> <!-- com.nopcommerce.register.Register -->
     </classes>
-  </test> <!-- Run on Firefox(failed) -->
-</suite> <!-- Failed suite [Nop Commerce] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
