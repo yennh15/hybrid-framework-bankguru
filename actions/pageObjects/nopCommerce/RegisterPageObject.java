@@ -5,8 +5,7 @@ import org.openqa.selenium.WebDriver;
 import commons.BasePage;
 import pageUIs.nopCommerce.RegisterPageUI;
 
-
-public class RegisterPageObject extends BasePage{
+public class RegisterPageObject extends BasePage {
 	public RegisterPageObject(WebDriver driver) {
 		super();
 		this.driver = driver;
@@ -55,7 +54,7 @@ public class RegisterPageObject extends BasePage{
 	}
 
 	public HomePageObject clickToLogoutLink() {
-		waitForElementClickable(driver, RegisterPageUI.LOGOUT_LINK);	
+		waitForElementClickable(driver, RegisterPageUI.LOGOUT_LINK);
 		clickToElement(driver, RegisterPageUI.LOGOUT_LINK);
 		return PageObjectManager.getHomePage(driver);
 	}
@@ -88,13 +87,10 @@ public class RegisterPageObject extends BasePage{
 	public void sendKeyToEmail(String emailValue) {
 		waitForElementVisible(driver, RegisterPageUI.EMAIL_TEXTBOX);
 		sendKeyToElement(driver, RegisterPageUI.EMAIL_TEXTBOX, emailValue);
-		
+
 	}
 
-	public boolean isWrongEmailErrorMessageDisplayed() {
-		waitForElementVisible(driver, RegisterPageUI.WRONG_EMAIL_ERROR_MESSAGE);
-		return isElementDisplayed(driver, RegisterPageUI.WRONG_EMAIL_ERROR_MESSAGE);
-	}
+	
 
 	public void registerUser(String firstName, String lastName, String email, String password) {
 		enterToFirstNameTextbox(firstName);
@@ -104,11 +100,29 @@ public class RegisterPageObject extends BasePage{
 		enterToConfirmPasswordTextbox(password);
 		clickToRegisterButton();
 	}
+	public void registerUser(String firstName, String lastName, String email, String password, String confirmPassword) {
+		enterToFirstNameTextbox(firstName);
+		enterToLastNameTextbox(lastName);
+		enterToEmailTextbox(email);
+		enterToPasswordTextbox(password);
+		enterToConfirmPasswordTextbox(confirmPassword);
+		clickToRegisterButton();
+	}
 
 	public boolean isExstingEmailErrorMessageDisplayed() {
 		waitForElementVisible(driver, RegisterPageUI.EXISTING_EMAIL_ERROR_MESSAGE);
 		return isElementDisplayed(driver, RegisterPageUI.EXISTING_EMAIL_ERROR_MESSAGE);
 	}
-	
+
+	public boolean isAtLeast6CharacterPasswordErrorMessageDisplayed() {
+		waitForElementVisible(driver, RegisterPageUI.RULE_PASSWORD_ERROR_MESSAGE);
+		return isElementDisplayed(driver, RegisterPageUI.RULE_PASSWORD_ERROR_MESSAGE)
+				&& isElementDisplayed(driver, RegisterPageUI.AT_LEAST_6_CHARACTER_PASSWORD_ERROR_MESSAGE);
+	}
+
+	public boolean isUnmatchingConfirmPasswordErrorMessageDisplayed() {
+		waitForElementVisible(driver, RegisterPageUI.UNMATCHING_PASSWORD_ERROR_MESSAGE);
+		return isElementDisplayed(driver, RegisterPageUI.UNMATCHING_PASSWORD_ERROR_MESSAGE);
+	}
 
 }

@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Nop Commerce]">
   <parameter name="url" value="https://demo.nopcommerce.com/"/>
-  <test thread-count="5" name="Run on Chrome(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Run on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.nopcommerce.register.Register">
+      <class name="com.nopcommerce.login.Level_03_Register_Login_Page_Object">
         <methods>
-          <include name="TC_02_Register_With_Wrong_Email"/>
+          <include name="Login_01_Register_To_System"/>
           <include name="beforeClass"/>
           <include name="cleanBrowser"/>
         </methods>
-      </class> <!-- com.nopcommerce.register.Register -->
+      </class> <!-- com.nopcommerce.login.Level_03_Register_Login_Page_Object -->
     </classes>
-  </test> <!-- Run on Chrome(failed) -->
+  </test> <!-- Run on Firefox(failed) -->
 </suite> <!-- Failed suite [Nop Commerce] -->

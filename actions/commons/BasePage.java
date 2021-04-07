@@ -387,6 +387,11 @@ public class BasePage {
 		clickToElement(driver, PageUIs.ORDERS_LINK_AT_FOOTER);
 		return PageObjectManager.getOrderPage(driver);
 	}
+	
+	public boolean isWrongEmailErrorMessageDisplayed(WebDriver driver) {
+		waitForElementVisible(driver, PageUIs.WRONG_EMAIL_ERROR_MESSAGE);
+		return isElementDisplayed(driver, PageUIs.WRONG_EMAIL_ERROR_MESSAGE);
+	}
 
 	private Alert alert;
 	private WebDriverWait wait;
