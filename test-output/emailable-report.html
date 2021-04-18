@@ -9,33 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Nop Commerce</th></tr>
-<tr><td><a href="#t0">Run on Chrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">48,927</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Run on Firefox</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">78,034</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">1</th><th class="num">126,961</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Run on Chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">45,333</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Nop Commerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.nopcommerce.login.Level_03_Register_Login_Page_Object</td><td><a href="#m0">Login_01_Register_To_System</a></td><td rowspan="1">1617783210931</td><td rowspan="1">16876</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Run on Firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.login.Level_03_Register_Login_Page_Object</td><td><a href="#m1">Login_01_Register_To_System</a></td><td rowspan="1">1617783303317</td><td rowspan="1">139</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Nop Commerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.nopcommerce.register.Register</td><td><a href="#m0">TC_02_Register_With_Wrong_Email</a></td><td rowspan="1">1618759331565</td><td rowspan="1">1406</td></tr><tr class="passedeven"><td><a href="#m1">TC_06_Register_With_Valid_Data</a></td><td rowspan="1">1618759333129</td><td rowspan="1">24171</td></tr></tbody>
 </table>
-<h2>Run on Chrome</h2><h3 id="m0">com.nopcommerce.login.Level_03_Register_Login_Page_Object#Login_01_Register_To_System</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Run on Firefox</h2><h3 id="m1">com.nopcommerce.login.Level_03_Register_Login_Page_Object#Login_01_Register_To_System</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;HAIYEN-PC&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at commons.BasePage.waitForElementClickable(BasePage.java:367)
-	at pageObjects.nopCommerce.HomePageObject.clickToRegisterLink(HomePageObject.java:17)
-	at com.nopcommerce.login.Level_03_Register_Login_Page_Object.Login_01_Register_To_System(Level_03_Register_Login_Page_Object.java:42)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run on Chrome</h2><h3 id="m0">com.nopcommerce.register.Register#TC_02_Register_With_Wrong_Email</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-04-18 22:22:11,663] TC_02_Register_With_Wrong_Email - Step 1: Enter wrong email 
+<br><br/>[INFO ] [2021-04-18 22:22:12,682] TC_02_Register_With_Wrong_Email - Step 2: Click enter button 
+<br><br/>[INFO ] [2021-04-18 22:22:12,848] TC_02_Register_With_Wrong_Email - Step 3:  Verify wrong email error message displayed
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nopcommerce.register.Register#TC_06_Register_With_Valid_Data</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-04-18 22:22:13,143] TC_06_Register_With_Valid_Data - Step 1: Register with firstName= Nguyen and lastName= Yen and email= yen881541@gmail.com and password= 1234567
+<br><br/>[INFO ] [2021-04-18 22:22:17,166] TC_06_Register_With_Valid_Data - Step 2: Verify that register with valid user is successful
+<br><br/>[INFO ] [2021-04-18 22:22:17,249]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-04-18 22:22:17,249] TC_06_Register_With_Valid_Data - Step 3: Verify that Register Link is not displayed
+<br><br/>[INFO ] [2021-04-18 22:22:37,300]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

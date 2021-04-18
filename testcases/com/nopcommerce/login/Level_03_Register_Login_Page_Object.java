@@ -8,13 +8,13 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.nopCommerce.HomePageObject;
-import pageObjects.nopCommerce.LoginPageObject;
-import pageObjects.nopCommerce.MyAccountPageObject;
-import pageObjects.nopCommerce.OrderPageObject;
+import pageObjects.nopCommerce.UserHomePO;
+import pageObjects.nopCommerce.UserLoginPO;
+import pageObjects.nopCommerce.UserMyAccountPO;
+import pageObjects.nopCommerce.UserOrderPO;
 import pageObjects.nopCommerce.PageObjectManager;
-import pageObjects.nopCommerce.RegisterPageObject;
-import pageObjects.nopCommerce.SearchPageObject;
+import pageObjects.nopCommerce.UserRegisterPO;
+import pageObjects.nopCommerce.UserSearchPO;
 
 public class Level_03_Register_Login_Page_Object extends BaseTest {
 	
@@ -28,7 +28,7 @@ public class Level_03_Register_Login_Page_Object extends BaseTest {
 
 		driver = initBrowser(browserName, appUrl);
 		// Step 1: Open URL => Home Page
-		homePage = PageObjectManager.getHomePage(driver);
+		homePage = PageObjectManager.getUserHomePage(driver);
 				//PageObjectManager.getHomePage(driver);
 		email = "yen" + getRandomNumber() + "@gmail.com";
 		password = "1234567";
@@ -86,10 +86,10 @@ public class Level_03_Register_Login_Page_Object extends BaseTest {
 		driver.quit();
 	}
 
-	HomePageObject homePage;
-	LoginPageObject loginPage;
-	RegisterPageObject registerPage;
-	SearchPageObject searchPage;
-	MyAccountPageObject myAccountPage;
-	OrderPageObject orderPage;
+	UserHomePO homePage;
+	UserLoginPO loginPage;
+	UserRegisterPO registerPage;
+	UserSearchPO searchPage;
+	UserMyAccountPO myAccountPage;
+	UserOrderPO orderPage;
 }

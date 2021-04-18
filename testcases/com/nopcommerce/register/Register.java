@@ -8,15 +8,15 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.nopCommerce.HomePageObject;
+import pageObjects.nopCommerce.UserHomePO;
 import pageObjects.nopCommerce.PageObjectManager;
-import pageObjects.nopCommerce.RegisterPageObject;
+import pageObjects.nopCommerce.UserRegisterPO;
 
 public class Register extends BaseTest {
 
 	WebDriver driver;
-	HomePageObject homePage;
-	RegisterPageObject registerPage;
+	UserHomePO homePage;
+	UserRegisterPO registerPage;
 	String email;
 	String password, firstName, lastName;
 
@@ -24,7 +24,7 @@ public class Register extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) {
 		driver = initBrowser(browserName, appUrl);
-		homePage = PageObjectManager.getHomePage(driver);
+		homePage = PageObjectManager.getUserHomePage(driver);
 		registerPage = homePage.clickToRegisterLink();
 		email = "yen" + getRandomNumber() + "@gmail.com";
 		password = "1234567";
@@ -48,8 +48,13 @@ public class Register extends BaseTest {
 	@Test
 	public void TC_02_Register_With_Wrong_Email() {
 		registerPage.refresh(driver);
+		log.info("TC_02_Register_With_Wrong_Email - Step 1: Enter wrong email ");
 		registerPage.sendKeyToEmail("a");
+		
+		log.info("TC_02_Register_With_Wrong_Email - Step 2: Click enter button ");
 		registerPage.clickToRegisterButton();
+		
+		log.info("TC_02_Register_With_Wrong_Email - Step 3:  Verify wrong email error message displayed");
 		Assert.assertTrue(registerPage.isWrongEmailErrorMessageDisplayed(driver));
 	}
 
@@ -71,7 +76,7 @@ public class Register extends BaseTest {
 		
 		Assert.assertTrue(registerPage.isAtLeast6CharacterPasswordErrorMessageDisplayed());
 	}
-	@Test
+	//@Test
 	public void TC_05_Register_With_Unmatching_Confirm_Password() {
 		registerPage.refresh(driver);
 		registerPage.registerUser(firstName, lastName, email, "123456", "589589" );
@@ -81,12 +86,19 @@ public class Register extends BaseTest {
 	@Test
 	public void TC_06_Register_With_Valid_Data() {
 		registerPage.refresh(driver);
+		
+		log.info("TC_06_Register_With_Valid_Data - Step 1: Register with firstName= " + firstName + " and lastName= " + lastName + " and email= " + email + " and password= " + password);
 		registerPage.registerUser(firstName, lastName, email, password );
-		Assert.assertTrue(registerPage.isSuccessMessageDisplayed());
+		
+		log.info("TC_06_Register_With_Valid_Data - Step 2: Verify that register with valid user is successful");
+		verifyTrue(registerPage.isSuccessMessageDisplayed());
+		
+		log.info("TC_06_Register_With_Valid_Data - Step 3: Verify that Register Link is not displayed");
+		verifyTrue(registerPage.isRegisterPageUndisplayed(driver));
 	}
 
 	@AfterClass
 	public void cleanBrowser() {
-	//	driver.quit();
+		driver.quit();
 	}
 }

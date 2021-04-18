@@ -1,0 +1,34 @@
+[INFO ] [2021-04-15 12:06:18,870] Step 1: Register with firstName=Nguyen and lastName=Yenand email=yen830449@gmail.comand password=1234567
+[INFO ] [2021-04-15 12:06:25,515] Step 2: Verify that register with valid user is successful
+[INFO ] [2021-04-15 12:06:25,887] Step 3: Verify that Register Link is not displayed
+[INFO ] [2021-04-15 12:12:22,260] Step 1: Register with firstName=Nguyen and lastName=Yenand email=yen568993@gmail.comand password=1234567
+[INFO ] [2021-04-15 12:12:26,899] Step 2: Verify that register with valid user is successful
+[INFO ] [2021-04-15 12:12:26,990] Step 3: Verify that Register Link is not displayed
+[INFO ] [2021-04-15 12:23:41,209] Step 1: Register with firstName= Nguyen and lastName= Yen and email= yen599730@gmail.com and password= 1234567
+[INFO ] [2021-04-15 12:23:46,479] Step 2: Verify that register with valid user is successful
+[INFO ] [2021-04-15 12:23:46,594]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-15 12:23:46,597] Step 3: Verify that Register Link is not displayed
+[INFO ] [2021-04-15 12:24:06,728]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-04-18 17:31:08,684] Step 1: Register with firstName= Nguyen and lastName= Yen and email= yen770036@gmail.com and password= 1234567
+[INFO ] [2021-04-18 17:31:19,249] Step 2: Verify that register with valid user is successful
+[INFO ] [2021-04-18 17:31:19,409]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-18 17:31:19,413] Step 3: Verify that Register Link is not displayed
+[INFO ] [2021-04-18 17:31:39,931]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-18 22:07:08,382] Step 1: Register with firstName= Nguyen and lastName= Yen and email= yen699742@gmail.com and password= 1234567
+[INFO ] [2021-04-18 22:07:16,346] Step 2: Verify that register with valid user is successful
+[INFO ] [2021-04-18 22:07:16,422]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-18 22:07:16,426] Step 3: Verify that Register Link is not displayed
+[INFO ] [2021-04-18 22:07:36,534]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-18 22:16:19,136] Step 1: Register with firstName= Nguyen and lastName= Yen and email= yen277075@gmail.com and password= 1234567
+[INFO ] [2021-04-18 22:16:23,446] Step 2: Verify that register with valid user is successful
+[INFO ] [2021-04-18 22:16:23,521]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-18 22:16:23,523] Step 3: Verify that Register Link is not displayed
+[INFO ] [2021-04-18 22:16:34,935]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-18 22:22:11,663] TC_02_Register_With_Wrong_Email - Step 1: Enter wrong email 
+[INFO ] [2021-04-18 22:22:12,682] TC_02_Register_With_Wrong_Email - Step 2: Click enter button 
+[INFO ] [2021-04-18 22:22:12,848] TC_02_Register_With_Wrong_Email - Step 3:  Verify wrong email error message displayed
+[INFO ] [2021-04-18 22:22:13,143] TC_06_Register_With_Valid_Data - Step 1: Register with firstName= Nguyen and lastName= Yen and email= yen881541@gmail.com and password= 1234567
+[INFO ] [2021-04-18 22:22:17,166] TC_06_Register_With_Valid_Data - Step 2: Verify that register with valid user is successful
+[INFO ] [2021-04-18 22:22:17,249]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-18 22:22:17,249] TC_06_Register_With_Valid_Data - Step 3: Verify that Register Link is not displayed
+[INFO ] [2021-04-18 22:22:37,300]  -------------------------- PASSED -------------------------- 

@@ -8,16 +8,16 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.nopCommerce.HomePageObject;
-import pageObjects.nopCommerce.LoginPageObject;
+import pageObjects.nopCommerce.UserHomePO;
+import pageObjects.nopCommerce.UserLoginPO;
 import pageObjects.nopCommerce.PageObjectManager;
-import pageObjects.nopCommerce.RegisterPageObject;
+import pageObjects.nopCommerce.UserRegisterPO;
 
 public class Login extends BaseTest {
 	WebDriver driver;
-	HomePageObject homePage;
-	RegisterPageObject registerPage;
-	LoginPageObject loginPage;
+	UserHomePO homePage;
+	UserRegisterPO registerPage;
+	UserLoginPO loginPage;
 	String email;
 	String password, firstName, lastName;
 
@@ -25,7 +25,7 @@ public class Login extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) {
 		driver = initBrowser(browserName, appUrl);
-		homePage = PageObjectManager.getHomePage(driver);
+		homePage = PageObjectManager.getUserHomePage(driver);
 		registerPage = homePage.clickToRegisterLink();
 		email = "yen" + getRandomNumber() + "@gmail.com";
 		password = "1234567";

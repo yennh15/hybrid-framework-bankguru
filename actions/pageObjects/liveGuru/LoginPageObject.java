@@ -32,26 +32,26 @@ public class LoginPageObject extends BasePage{
 
 	public String getEmptyPasswordErrorMessage() {
 		waitForAllElementVisible(driver, LoginPageUI.EMPTY_PASSWORD_MESSAGE);
-		return getTextElement(driver, LoginPageUI.EMPTY_PASSWORD_MESSAGE);
+		return getElementText(driver, LoginPageUI.EMPTY_PASSWORD_MESSAGE);
 	}
 
 	public String getEmptyEmailErrorMessage() {
 		waitForAllElementVisible(driver, LoginPageUI.EMPTY_EMAIL_MESSAGE);
-		return getTextElement(driver, LoginPageUI.EMPTY_EMAIL_MESSAGE);
+		return getElementText(driver, LoginPageUI.EMPTY_EMAIL_MESSAGE);
 	}
 
 	public String getInvalidEmailErrorMessage() {
 		waitForElementVisible(driver, LoginPageUI.VALIDATE_EMAIL_MESSAGE);
-		return getTextElement(driver, LoginPageUI.VALIDATE_EMAIL_MESSAGE);
+		return getElementText(driver, LoginPageUI.VALIDATE_EMAIL_MESSAGE);
 	}
 
 	public String getInvalidPasswordErrorMessage() {
 		waitForElementVisible(driver, LoginPageUI.VALIDATE_PASSWORD_MESSAGE);
-		return getTextElement(driver, LoginPageUI.VALIDATE_PASSWORD_MESSAGE);
+		return getElementText(driver, LoginPageUI.VALIDATE_PASSWORD_MESSAGE);
 	}
 
 	public String getIncorrectEmailOrPasswordErrorMessage() {
 		waitForElementVisible(driver, LoginPageUI.INVALID_EMAIL_OR_PASSWORD_MESSAGE);
-		return getTextElement(driver, LoginPageUI.INVALID_EMAIL_OR_PASSWORD_MESSAGE);
+		return getElementText(driver, LoginPageUI.INVALID_EMAIL_OR_PASSWORD_MESSAGE);
 	}
 }
