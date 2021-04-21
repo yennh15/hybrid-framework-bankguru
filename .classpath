@@ -46,5 +46,13 @@
 	<classpathentry kind="lib" path="libAllureReport/slf4j-api-1.7.30.jar"/>
 	<classpathentry kind="lib" path="libAllureReport/tika-core-1.20.jar"/>
 	<classpathentry kind="lib" path="libTestNGReport/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="libExtendReport/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="libExtendReport/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="libExtendReport/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="libExtendReport/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="libExtendReport/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="libExtendReport/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="libExtendReport/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="libExtendReport/testng-6.9.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -8,10 +8,15 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.nopCommerce.UserHomePO;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import pageObjects.nopCommerce.PageObjectManager;
+import pageObjects.nopCommerce.UserHomePO;
 import pageObjects.nopCommerce.UserRegisterPO;
 
+@Feature("User")
 public class Register extends BaseTest {
 
 	WebDriver driver;
@@ -44,10 +49,12 @@ public class Register extends BaseTest {
 		Assert.assertTrue(registerPage.isConfirmPasswordErrorMessageDisplayed());
 
 	}
-
+	@Description("Register_With_Wrong_Email")
+	@Severity(SeverityLevel.NORMAL)
 	@Test
 	public void TC_02_Register_With_Wrong_Email() {
 		registerPage.refresh(driver);
+	
 		log.info("TC_02_Register_With_Wrong_Email - Step 1: Enter wrong email ");
 		registerPage.sendKeyToEmail("a");
 		
@@ -94,7 +101,7 @@ public class Register extends BaseTest {
 		verifyTrue(registerPage.isSuccessMessageDisplayed());
 		
 		log.info("TC_06_Register_With_Valid_Data - Step 3: Verify that Register Link is not displayed");
-		verifyTrue(registerPage.isRegisterPageUndisplayed(driver));
+		verifyFalse(registerPage.isRegisterPageUndisplayed(driver));
 	}
 
 	@AfterClass

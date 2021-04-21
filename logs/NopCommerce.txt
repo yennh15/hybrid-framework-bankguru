@@ -1,8 +1,9 @@
-[INFO ] [2021-04-18 22:22:11,663] TC_02_Register_With_Wrong_Email - Step 1: Enter wrong email 
-[INFO ] [2021-04-18 22:22:12,682] TC_02_Register_With_Wrong_Email - Step 2: Click enter button 
-[INFO ] [2021-04-18 22:22:12,848] TC_02_Register_With_Wrong_Email - Step 3:  Verify wrong email error message displayed
-[INFO ] [2021-04-18 22:22:13,143] TC_06_Register_With_Valid_Data - Step 1: Register with firstName= Nguyen and lastName= Yen and email= yen881541@gmail.com and password= 1234567
-[INFO ] [2021-04-18 22:22:17,166] TC_06_Register_With_Valid_Data - Step 2: Verify that register with valid user is successful
-[INFO ] [2021-04-18 22:22:17,249]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-04-18 22:22:17,249] TC_06_Register_With_Valid_Data - Step 3: Verify that Register Link is not displayed
-[INFO ] [2021-04-18 22:22:37,300]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-21 20:45:39,937] TC_Common_Register_With_Valid_Data - Step 1: Register with firstName= Nguyen and lastName= Yen and email= yen793051@gmail.com and password= 1234567
+[INFO ] [2021-04-21 20:45:44,982] TC_Common_Register_With_Valid_Data - Step 2: Verify that register with valid user is successful
+[INFO ] [2021-04-21 20:45:45,198]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-04-21 20:46:50,025] TC_01_Login_With_Valid_Data - Step 1: Click to Login Link
+[INFO ] [2021-04-21 20:46:57,638] TC_01_Login_With_Valid_Data - Step 2: Enter to Email textbox with value yen793051@gmail.com
+[INFO ] [2021-04-21 20:46:57,972] TC_01_Login_With_Valid_Data - Step 3: Enter to Password textbox with value yen793051@gmail.com
+[INFO ] [2021-04-21 20:46:58,398] TC_01_Login_With_Valid_Data - Step 4: Click to Login Button
+[INFO ] [2021-04-21 20:47:01,644] TC_01_Login_With_Valid_Data - Step 5: Verify My Account Link is displayed
+[INFO ] [2021-04-21 20:47:01,878]  -------------------------- PASSED -------------------------- 

@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Step;
 import pageObjects.nopCommerce.AdminProductPO;
 import pageObjects.nopCommerce.PageObjectManager;
 import pageObjects.nopCommerce.UserOrderPO;
@@ -547,6 +548,7 @@ public class BasePage {
 		return PageObjectManager.getProductPage(driver);
 	}
 
+	@Step("Check register link is undisplayed")
 	public boolean isRegisterPageUndisplayed(WebDriver driver) {
 		return isElementUndisplayed(driver, PageUIs.REGISTER_LINK);
 	}

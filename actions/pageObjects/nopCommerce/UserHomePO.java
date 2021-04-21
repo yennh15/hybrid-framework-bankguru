@@ -35,5 +35,15 @@ public class UserHomePO extends BasePage {
 		waitForElementVisible(driver, UserHomePageUI.HOME_PAGE_SLIDER);
 		return isElementDisplayed(driver, UserHomePageUI.HOME_PAGE_SLIDER);
 	}
+	
+	public boolean isMyAccountLinkDisplayed() {
+		waitForElementVisible(driver, UserHomePageUI.MY_ACCOUNT_LINK);
+		return isElementDisplayed(driver, UserHomePageUI.MY_ACCOUNT_LINK);
+	}
+	
+	public boolean isLogOutLinkDisplayed() {
+		waitForElementVisible(driver, UserHomePageUI.LOG_OUT_LINK);
+		return isElementDisplayed(driver, UserHomePageUI.LOG_OUT_LINK);
+	}
 
 }

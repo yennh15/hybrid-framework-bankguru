@@ -2,16 +2,21 @@
 <suite name="Nop Commerce" parallel="false">
 	<parameter name="url" value="https://demo.nopcommerce.com/" />
 
-	<!--<listeners> <listener class-name="commons.MethodListener" /> </listeners> -->
+	<!--<listeners> </listeners> -->
 	<listeners>
+	 	<listener class-name="commons.MethodListener" />
+	 	<listener class-name="reportConfig.ExtentReportListenerVersion2" />
 		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+		<listener class-name="reportConfig.AllureTestListener"/>
 	</listeners>
 
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.nopcommerce.register.Register" />
+			<class name="com.nopcommerce.common.Register" />
+			<class name="com.nopcommerce.login.LoginShareSate" />
+			<!-- <class name="com.nopcommerce.register.Register" /> -->
 		</classes>
 	</test>
 	<!-- <test name="Run on FireFox"> <parameter name="browser" value="firefox" 
