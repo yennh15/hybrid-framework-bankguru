@@ -46,7 +46,6 @@ public class LoginShareSate extends BaseTest {
 		
 		log.info("TC_01_Login_With_Valid_Data - Step 5: Verify My Account Link is displayed");
 		verifyTrue(homePage.isLogOutLinkDisplayed());
-		
 	}
 
 	
